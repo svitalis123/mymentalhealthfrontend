@@ -41,7 +41,7 @@ export const authService = {
 // Client services
 export const clientService = {
   getAll: async () => {
-    const response = await api.get('/clients')
+    const response = await api.get('/clients/')
     return response.data
   },
   getById: async (id: number) => {
@@ -64,7 +64,7 @@ export const clientService = {
 // Session services
 export const sessionService = {
   getAll: async () => {
-    const response = await api.get('/sessions')
+    const response = await api.get('/sessions/')
     return response.data
   },
   getById: async (id: number) => {
@@ -91,7 +91,7 @@ export const sessionService = {
 // Material services
 export const materialService = {
   getAll: async () => {
-    const response = await api.get('/materials')
+    const response = await api.get('/materials/')
     return response.data
   },
   getById: async (id: number) => {
